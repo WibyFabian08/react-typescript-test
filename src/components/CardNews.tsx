@@ -3,7 +3,6 @@ import {
   Card,
   Button,
 } from "antd";
-
 import { Link } from "react-router-dom";
 
 const { Meta } = Card;
@@ -13,7 +12,7 @@ const CardNews = (props: { item: ArticleType }) => {
     <Card
       cover={
         <img
-          alt="example"
+          alt={props.item.author}
           src={
             props.item.urlToImage ||
             "https://leaveitwithme.com.au/wp-content/uploads/2013/11/dummy-image-square.jpg"

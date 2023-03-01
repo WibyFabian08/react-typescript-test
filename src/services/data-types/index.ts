@@ -1,11 +1,11 @@
-export interface newsType {
-    status: string,
-    totalResults: number,
-    articles: ArticleType[]
-}
+// export interface newsType {
+//     status: string,
+//     totalResults: number,
+//     articles: ArticleType[]
+// }
 
 export interface ArticleType {
-    source: sourceType,
+    source: SourceType,
     author: string,
     title: string,
     description?: string,
@@ -15,7 +15,7 @@ export interface ArticleType {
     content?: string
 }
 
-export interface sourceType {
+export interface SourceType {
     id: string,
     name: string
 }

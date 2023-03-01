@@ -18,8 +18,8 @@ const { Header, Content, Footer } = Layout;
 const { Title } = Typography;
 
 const Home: React.FC = () => {
-  const [isLoading, setIsLoading] = useState(false);
-  const [articles, setArticles] = useState([]);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [articles, setArticles] = useState<ArticleType[]>([]);
   const [category, setCategory] = useState<string>("sport");
   const [loadingTemp] = useState(new Array(12).fill(2));
   
